@@ -1,0 +1,21 @@
+#rmg-overlay {
+  all: initial;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483647 !important;
+  pointer-events: none !important;
+  overflow: visible !important;
+}
+#rmg-overlay svg { all: initial; position: absolute !important; inset: 0 !important; width: 100vw !important; height: 100vh !important; overflow: visible !important; }
+#rmg-overlay .rmg-path { fill: none; stroke: #35a7ff; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 1px 3px rgba(0,0,0,.45)); }
+#rmg-overlay .rmg-dot { fill: #fff; stroke: #1687e8; stroke-width: 3; }
+#rmg-overlay .rmg-label {
+  all: initial; position: absolute !important; left: 0; top: 0;
+  padding: 8px 12px !important; border-radius: 8px !important;
+  color: #fff !important; background: rgba(24, 28, 36, .92) !important;
+  border: 1px solid rgba(255,255,255,.2) !important;
+  box-shadow: 0 4px 18px rgba(0,0,0,.25) !important;
+  font: 13px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  white-space: nowrap !important; letter-spacing: 0 !important;
+}
+#rmg-overlay .rmg-label strong { color: #70c2ff !important; font-weight: 700 !important; }
