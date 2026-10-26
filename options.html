@@ -11,7 +11,7 @@
     <header class="hero">
       <div class="logo" aria-hidden="true">↗</div>
       <div><p class="eyebrow" data-i18n="eyebrow">CHROME EXTENSION</p><h1 data-i18n="title">鼠标手势设置</h1><p class="subtitle" data-i18n="subtitle">按住右键移动，松开后执行手势。</p></div>
-      <span class="version">v1.1.0</span>
+      <span class="version">v1.2.0</span>
     </header>
 
     <section class="panel">
@@ -23,6 +23,14 @@
       <div class="setting-row sensitivity-row">
         <div class="setting-copy"><label for="sensitivity" data-i18n="sensitivityLabel">手势灵敏度</label><p data-i18n="sensitivityHelp">越高越容易识别短距离移动；越低则需要更明显的移动。</p></div>
         <div class="range-wrap"><div class="range-labels"><span data-i18n="lessSensitive">低</span><strong id="sensitivityValue">60%</strong><span data-i18n="moreSensitive">高</span></div><input id="sensitivity" type="range" min="1" max="100" value="60"><p class="hint" id="sensitivityHint"></p></div>
+      </div>
+      <div class="setting-row sensitivity-row">
+        <div class="setting-copy"><label for="activationDistance" data-i18n="activationLabel">手势启动距离</label><p data-i18n="activationHelp">小于该距离时保持普通右键，超过后才开始手势。</p></div>
+        <div class="range-wrap"><div class="range-labels"><span data-i18n="shortDistance">短</span><strong id="activationValue">12px</strong><span data-i18n="longDistance">长</span></div><input id="activationDistance" type="range" min="6" max="36" value="12"><p class="hint" data-i18n="activationHint">适当调大可防止普通右键的微小抖动被识别成手势。</p></div>
+      </div>
+      <div class="setting-row sensitivity-row">
+        <div class="setting-copy"><label for="turnDistance" data-i18n="turnLabel">折线转折距离</label><p data-i18n="turnHelp">控制第二段滑动要多长才能判定转折；反向转折比直角转折略短。</p></div>
+        <div class="range-wrap"><div class="range-labels"><span data-i18n="shortDistance">短</span><strong id="turnValue">14px</strong><span data-i18n="longDistance">长</span></div><input id="turnDistance" type="range" min="7" max="32" value="14"><p class="hint" data-i18n="turnHint">例如 ↑↓ 刷新将按照上一段的最高点计算反向距离。</p></div>
       </div>
       <div class="setting-row">
         <div class="setting-copy"><label data-i18n="previewLabel">手势预览</label><p data-i18n="previewHelp">提示会显示识别到的方向和对应指令。</p></div>
